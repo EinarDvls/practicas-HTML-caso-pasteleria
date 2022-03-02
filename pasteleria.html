@@ -4,17 +4,65 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-compatible" content="IE-edge">
         <meta name="viewport" content="width-device-width.initital-scale=1.0">
-        <title>Pasteleria "Alfer Boutique"</title>
-    </head>
-    <style type="text/css">
-        table, th, td ¨{
-            border: 1px solid black;
-        }
-    </style>
+        <title>Tu Sueño Pastelero</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
 
+    </head>
+        <style type="text/css">
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                border-radius: 3px;
+                background-color:aliceblue; 
+                margin: 0 auto;
+                width: 300px; 
+            }       
+    
+            th{
+                text-align: left;
+            }
+            form {
+                background-color: aliceblue;
+                border-radius: 3px;
+                font-size: 15px;
+                padding: 15px;
+                color: black;
+                margin:0 auto;
+                width: 300px;
+            }
+            input, textarea {
+                border: 0;
+                outline: none;
+                width: 300px;
+            }
+            .field{
+                border:solid 1px #ccc;
+                padding:10px;
+                width: 280px;
+            }
+            .field:focus{
+                border-color: #000000;
+            }
+        </style>
+     <section>
+            <nav class="" uk-navbar>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="">Inicio</a></li>
+                            <li><a href="./pedidos.html">Pedidos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+     </section>
     <body>
-        <H1>Pasteles </H1>
-        <table style="width:50%">
+    <h1>Pasteles</h1> 
+    <hr>    
+   
+         <table style="width:30%">
+
             <h2>linea Regular</h2>
             <tr>
                 <th>
@@ -73,97 +121,136 @@
                 <td>$435.00</td>
             </tr>  
         </table>
-    <br>
-    <br>
-    <br>
-        <table>
+    <br><br><br>
+        <table style="width:30%">
+            <h2>Linea Light</h2>
             <tr>
-                <td>Fresa $340.00</td>
+                <th>
+                    Sabores
+                </th>
+                <th>
+                    Precio
+                </th>
+            <tr>
+                <td>Fresa</td>
+                <td>$340.00</td>
             </tr>
             <tr>
-                <td>Moka $356.00</td>
+                <td>Moka</td>
+                <td>$356.00</td>
             </tr>
             <tr>
-                <td>Tres Leches $340.00</td>
+                <td>Tres Leches</td>
+                <td>$340.00</td>
             </tr>
             <tr>
-                <td>Adiccion $178.00</td>
+                <td>Adiccion</td>
+                <td>$178.00</td>
             </tr>
             <tr>
-                <td>Panque de Naranja $176.00</td>
+                <td>Panque de Naranja</td>
+                <td>$176.00</td>
             </tr>    
     </table> 
-    <br>      
-    <hr>      
-            <table>
+    <br> 
+    <hr>  
+    <br><br>
+            <table style="width:30%">
+                <h2>Adornos</h2>
                 <tr>
-                    <td>Vela luminosa $44.00</td>
+                    <th>
+                        Sabores
+                    </th>
+                    <th>
+                        Precio
+                    </th>
+                <tr>
+                    <td>Vela luminosa</td>
+                    <td>$44.00</td>
                 </tr>
                 <tr>
-                    <td>Vela Dulce $25.00</td>
+                    <td>Vela Dulce</td>
+                    <td>$25.00</td>
                 </tr>
                  <tr>
-                    <td>Bolsa de regalo $15.00</td>
+                    <td>Bolsa de regalo</td>
+                    <td>$15.00</td>
                 </tr>  
                 <tr>
-                    <td>Vela de Cera de Número $25.00 </td>
+                    <td>Vela de Cera de Número</td>
+                    <td>$25.00 </td>
                 </tr>       
                 <tr>
-                    <td>Vela Dino Bebé $25.00</td>
+                    <td>Vela Dino Bebé</td>
+                    <td>$25.00</td>
                  </tr>      
                 <tr>
-                    <td>Vela Dinosaurio Rex $25.00</td>
+                    <td>Vela Dinosaurio Rex</td>
+                    <td>$25.00</td>
                  </tr>
                  <tr>
-                     <td>Vela de cera de colores $51.00</td>
+                     <td>Vela de cera de colores</td>
+                    <td>$51.00</td>
                  </tr>
                  <tr>
-                     <td>Vela Led de Colores $81.00</td>
+                     <td>Vela Led de Colores</td>
+                    <td>$81.00</td>
                  </tr>
                  <tr>
-                     <td>Vela Feliz Cumpleaños $25.00</td>
+                     <td>Vela Feliz Cumpleaños</td>
+                    <td>$25.00</td>
                  </tr>
                 <tr>
-                    <td>Vela Futbol $51.00</td>
+                    <td>Vela Futbol</td>
+                    <td>$51.00</td>
                 </tr>
                 <tr>
-                    <td>Pala para Pastel $16.00</td>
+                    <td>Pala para Pastel</td>
+                    <td>$16.00</td>
                 </tr>
                 <tr>
-                    <td>Vela Dorada $25.00</td>
+                    <td>Vela Dorada</td>
+                    <td>$25.00</td>
                 </tr>
                 <tr>
-                    <td>Vela Plateada $25.00</td>
+                    <td>Vela Plateada</td>
+                    <td>$25.00</td>
                 </tr>
                 <tr>
-                    <td>Vela Bengala de Colores $44.00</td>
+                    <td>Vela Bengala de Colores</td>
+                    <td>$44.00</td>
                 </tr>
                 <tr>
-                    <td>Vela Unicornio $51.00</td>
-             
+                    <td>Vela Unicornio</td> 
+                    <td>$51.00</td>
                 </tr>
             </table>
-
-        <h3>Formulario para tu pedido</h3>
-
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="input1" name="input1"><br></br>
-
-        <label for="tel1">input de telefono</label>
-        <input type="tel" id="tel1" name="1" maxlength="10"><br></br>
-
-        <label for="correo1">input de correo</label> 
-        <input type="email" id="correo1" name="correo1"> <br></br>
-
-        <label for="descripcion">Descripcion General del Pastel</label>
-        <input type="text" id="input2" name="input2"><br></br>
-
-
-        <h5 style="color:#4a0f8d">Tlaquepaque</h5>
-        <p target="_blank" rel="noreferrer noopener">Calle Francisco I. Madero No. 163,<br>San Juan, San Pedro Tlaquepaque 45500</a></p>
-        <a href="tel://+523337498089">33 37498089</a>
+        <br><br><br>
+        <hr>
+            <h2>Formulario del Cliente</h2>
+            <form action="">
+                <p>Nombre:</p>
+                <input type="text" class="field"> <br/>
+                <p>Telefono:</p>
+                <input type="tel" class="field"> <br/>
+                <p>Correo Electronico:</p>
+                <input type="email" class="field"> <br/>
+                <p>Descripcion General del Pastel</p>
+                <textarea class="field"></textarea> <br/>
+                <p>Seleccion de Sabores</p>
+                <input type="text" class="field"><br/>
+                <p>Seleccion de Adornos</p>
+                <input type="text" class="field"><br/>
+                <p class="center-content"><input type="button" value="Enviar Datos"></p>
+            </form>
+            <p style="text-align: center" rel="noreferrer noopener">Horario de atencion a clientes<br>Lunes a Viernes<br>9 a.m. a 6 p.m</p>
+            <p style="text-align:center" color="black">Tlaquepaque</p>
+            <p style="text-align:center" rel="noreferrer noopener">Calle Francisco I. Madero No. 163,<br>San Juan, San Pedro Tlaquepaque 45500</p>
+            <p style="text-align:center">3337498089</p>
+        <br><br><br>
 
     </body>
 
 </html>
+
 
