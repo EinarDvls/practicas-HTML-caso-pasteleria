@@ -9,28 +9,6 @@
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
         <style>
-               form {
-                background-color: aliceblue;
-                border-radius: 3px;
-                font-size: 15px;
-                padding: 15px;
-                color: black;
-                margin: 0 auto;
-                width: 300px;
-            }
-            input, textarea {
-                border: 5px;
-                outline: none;
-                width: 300px;
-            }
-            .field{
-                border:solid 1px black;
-                padding:10px;
-                width: 280px;
-            }
-            .field:focus{
-                border-color: #000000;
-            }   
         </style>
     </head>
     <section>
@@ -51,29 +29,103 @@
             <div class="container-fluid">
                 <img src="./pastel.jpg" alt="logo" height="15px" class="d-inline-block align-text-top"> 
             </div>    
-
-        <h1>Formulario del Cliente</h1>
-        <form action="Pedido.js">
-            <p>Nombre:</p>
-            <input type="text" class="field"> <br/>
-            <p>Telefono:</p>
-            <input type="tel" class="field"> <br/>
-            <p>Correo Electronico:</p>
-            <input type="email" class="field"> <br/>
-            <p>Descripcion General del Pastel</p>
-            <textarea class="field"></textarea> <br/>
-            <p>Seleccion de Sabores</p>
-            <input type="text" class="field"><br/>
-            <p>Seleccion de Adornos</p>
-            <input type="text" class="field"><br/>
-            <p class="center-content"><input type="button" value="Enviar Datos"></p>
-            <p class="center-content"><input type="button" value="Reset"></p>
-        </form>
-        <hr>
+             <!-- Menú -->
+        <div class="row mx-auto" style="background-color: rgba(158, 186, 238, 0.733);">
+            <div class="text-center">
+                <br>
+            </div>
+            <br>
+        <section id="pedidos">
+            <h2 class="titulo-pedidos">HAZ TU PEDIDO</h2>
+            <form action="Pedido.js">
+                <h3 class="titulo-armalo">ARMALO A TU GUSTO</h3>
+                <div class="datos-personales">
+                    <div class="label-input">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="label-input">
+                        <label for="apellido-p">Apellido paterno</label>
+                        <input type="text" id="apellido-p">
+                    </div>
+                    <div class="label-input">
+                        <label for="apellido-m">Apellido materno</label>
+                        <input type="text" id="apellido-m">
+                    </div>
+                    <div class="label-input">
+                        <label for="telefono">Telefono de casa</label>
+                        <input type="text" id="telefono">
+                    </div>
+                    <div class="label-input">
+                        <label for="celular">Celular</label>
+                        <input type="text" id="celular">
+                    </div>
+                    <div class="label-input">
+                        <label for="correo-electronico">Correo electronico</label>
+                        <input type="text" id="correo-electronico">
+                    </div>
+                </div>
+                <p style="font-weight: bold; margin: 30px 0;">SELECCIONA EL PASTEL QUE DESEAS</p>
+                <div class="pasteles">
+                    <div>
+                        <label><input type="checkbox" id="cbox1" value="pastel1"> PASTEL CAPRICHO</label><br>
+                        <label><input type="checkbox" id="cbox2" value="pastel2"> PASTEL DE FRUTAS</label><br>
+                        <label><input type="checkbox" id="cbox3" value="pastel3"> PASTEL DE CHOCOLATE</label><br>
+                        <label><input type="checkbox" id="cbox4" value="pastel4"> PASTEL DE TRES LECHES</label><br>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" id="cbox5" value="pastel5"> PASTEL MOKA</label><br>
+                        <label><input type="checkbox" id="cbox6" value="pastel6"> PASTEL RED VELVET</label><br>
+                        <label><input type="checkbox" id="cbox7" value="pastel7"> DULCE DE LECHE</label><br>
+                    </div>
+                    <div>
+                        <br>
+                        <p>pasteles Light</p>
+                        <label><input type="checkbox" id="cbox8" value="pastel8">PASTEL DE FRESA</label><br>
+                        <label><input type="checkbox" id="cbox9" value="pastel9">PASTEL DE MOKA</label><br>
+                        <label><input type="checkbox" id="cbox10" value="pastel0">PASTEL DE TRES LECHES</label><br>
+                        <label><input type="checkbox" id="cbox11" value="pastel1">ADICCION</label><br>
+                        <label><input type="checkbox" id="cbox12" value="pastel2">PANQUE DE NARANJA</label><br>
+                    </div>
+                </div>
+            
+                <p style="font-weight: bold; margin: 30px 0;">O ARMA TU PASTEL A TU GUSTO</p>
+                <div class="pastel-personalizado">
+                    <div>
+                        <br>
+                        <p>Selecciona el tipo de pastel</p>
+                        <label><input type="checkbox" id="cbox1" value="pastel1"> CHEESECAKE</label><br>
+                        <label><input type="checkbox" id="cbox2" value="pastel2"> TRES LECHES</label><br>
+                    </div>
+                    <div>
+                        <br>
+                        <p>Selecciona el sabor</p>
+                        <label><input type="checkbox" id="cbox1" value="pastel1"> CHOCOLATE</label><br>
+                        <label><input type="checkbox" id="cbox2" value="pastel2"> FRESA</label><br>
+                        <label><input type="checkbox" id="cbox2" value="pastel2"> ZARZAMORA</label><br>
+                        <label><input type="checkbox" id="cbox2" value="pastel2"> OREO</label><br>
+                        <label><input type="checkbox" id="cbox2" value="pastel2"> CAJETA</label><br>
+                        <label><input type="checkbox" id="cbox2" value="pastel2"> MOKA</label><br>
+                    </div>
+                    <div>
+                        <br>
+                        <p>Selecciona algun adorno</p>
+                        <label><input type="checkbox" id="cbox1" value="pastel1"> VELA LUMINOSA</label><br>
+                        <label><input type="checkbox" id="cbox2" value="pastel2"> BOLSA DE REGALO</label><br>
+                        <label><input type="checkbox" id="cbox2" value="pastel2"> PALA PARA PASTEL</label><br>
+                        <label for="otro" id="otro">otros:</label><input type="text" id="text">
+                    </div>
+                </div>
+                <button class="btn-enviar" name="button">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <hr>
         <p style="text-align: center" rel="noreferrer noopener">Horario de atencion a clientes<br>Lunes a Viernes<br>9 a.m. a 6 p.m</p>
         <p style="text-align:center" color="black">Tlaquepaque</p>
         <p style="text-align:center" rel="noreferrer noopener">Calle Francisco I. Madero No. 163,<br>San Juan, San Pedro Tlaquepaque 45500</p>
         <p style="text-align:center">3337498089</p>
     <br><br><br>
+    <main>
     </body>
 </html>        
