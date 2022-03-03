@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name ="viewport" content="width-device-width.initital-scale=1.0">
+        <title> Pedidos </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+        <style>
+               form {
+                background-color: aliceblue;
+                border-radius: 3px;
+                font-size: 15px;
+                padding: 15px;
+                color: black;
+                margin: 0 auto;
+                width: 300px;
+            }
+            input, textarea {
+                border: 5px;
+                outline: none;
+                width: 300px;
+            }
+            .field{
+                border:solid 1px black;
+                padding:10px;
+                width: 280px;
+            }
+            .field:focus{
+                border-color: #000000;
+            }   
+        </style>
+    </head>
+    <section>
+        <nav class="" uk-navbar>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="./pasteleria.html">Inicio</a></li>
+                        <li class="uk-active"><a href="./Adornos.html">Adornos</a></li>
+                        <li><a href="./inicio.html">Pasteles</a></li>
+                    </ul>
+                </div> 
+            </nav>
+        </div>
+    </section>
+    <body>
+          <!-- Nav Bar -->
+          <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <img src="./pastel.jpg" alt="logo" height="15px" class="d-inline-block align-text-top"> 
+            </div>    
+
+        <h1>Formulario del Cliente</h1>
+        <form action="Pedido.js">
+            <p>Nombre:</p>
+            <input type="text" class="field"> <br/>
+            <p>Telefono:</p>
+            <input type="tel" class="field"> <br/>
+            <p>Correo Electronico:</p>
+            <input type="email" class="field"> <br/>
+            <p>Descripcion General del Pastel</p>
+            <textarea class="field"></textarea> <br/>
+            <p>Seleccion de Sabores</p>
+            <input type="text" class="field"><br/>
+            <p>Seleccion de Adornos</p>
+            <input type="text" class="field"><br/>
+            <p class="center-content"><input type="button" value="Enviar Datos"></p>
+            <p class="center-content"><input type="button" value="Reset"></p>
+        </form>
+        <hr>
+        <p style="text-align: center" rel="noreferrer noopener">Horario de atencion a clientes<br>Lunes a Viernes<br>9 a.m. a 6 p.m</p>
+        <p style="text-align:center" color="black">Tlaquepaque</p>
+        <p style="text-align:center" rel="noreferrer noopener">Calle Francisco I. Madero No. 163,<br>San Juan, San Pedro Tlaquepaque 45500</p>
+        <p style="text-align:center">3337498089</p>
+    <br><br><br>
+    </body>
+</html>        
